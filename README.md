@@ -18,7 +18,7 @@ A modern implementation of the classic Flappy Bird game using HTML5 Canvas and E
 
 1. Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/AhmedWGabr/flappy-bird
 cd flappy-bird
 ```
 
