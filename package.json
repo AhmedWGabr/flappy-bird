@@ -1,0 +1,31 @@
+{
+  "name": "flappy-bird",
+  "version": "1.0.0",
+  "description": "Flappy Bird game with HTML5 Canvas",
+  "main": "src/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dev": "http-server . -c-1 -o /src/index.html"
+  },
+  "build": {
+    "appId": "com.flappybird.game",
+    "productName": "Flappy Bird",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*"
+    ]
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "electron": "^25.0.0",
+    "electron-builder": "^24.0.0"
+  }
+}
